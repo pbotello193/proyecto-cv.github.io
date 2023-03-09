@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Responsive CV</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet"type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div class="contenedor">
+            <nav>
+                <button class="logotipo" onclick="mostrarEnlaces();"><i class="fab fa-black-tie"></i></button>
+                <div class="enlaces">
+                    <a href="#" id="enlaces0" style="display: none;">Inicio</a>
+                    <a href="#" id="enlaces1" style="display: none;">Galería</a>
+                    <a href="#" id="enlaces2" style="display: none;">Contacto</a>
+                    <button class="switch" id="switch">
+                        <span><i class="fas fa-sun"></i></span>
+                        <span><i class="fas fa-moon"></i></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
         <div class="container">
             <div class="left_side">
                 <div class="profileText">
@@ -185,5 +200,6 @@
                 </div>
             </div>
         </div>
+        <script src="dark-mode.js"></script>
     </body>
 </html>
